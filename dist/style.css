@@ -1,0 +1,5 @@
+ul[aria-labelledby="re-scrap"].dropdown-menu>li>a {
+  width: 300px;
+   text-overflow: ellipsis;
+   display: list-item;
+}
