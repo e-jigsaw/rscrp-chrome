@@ -1,4 +1,4 @@
-const setClipboard = () => navigator.clipboard.writeText(`${window.scrapbox.Page.lines.map(line => line.text).join('\n')}
+const setClipboard = () => navigator.clipboard.writeText(`${window.scrapbox.Project.name}: ${window.scrapbox.Page.lines.map(line => line.text).join('\n')}
 from [/${window.scrapbox.Project.name}/${window.scrapbox.Page.title}]`)
 
 window.addEventListener('rscrp:fetchPage', () => {
